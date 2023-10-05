@@ -1,0 +1,5 @@
+consulta de varias tablas:
+
+SELECT V.Fecha, V.IdVentas, C.Apellido, C.Nombre, P.producto, P.Precio 
+FROM Ventas V, Clientes C, Productos P
+WHERE V.idCliente = C.idCliente AND V.IdProductos = P.IdProductos
